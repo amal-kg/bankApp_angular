@@ -1,0 +1,35 @@
+<!-- As a link -->
+<nav class="navbar navbar-light bg-dark ">
+    <a class="navbar-brand  " href="#" style="color:rgb(85, 98, 237);"><b>&#169; HAFC Bank Pvt.Ltd </b></a>
+    <span class="quote text-light">Giving you freedom...</span>
+</nav>
+<div class="pt-5">
+    <h1 style="color: aliceblue; text-align: center;">Transaction History</h1>
+
+</div>
+<div class="container">
+    <table style="color:bisque" class="table table-dark table-hover">
+        <thead>
+            <tr>
+                <th>Amount</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>15000</td>
+                <td>credit</td>
+            </tr>
+
+            <tr *ngFor="let t of transactions">
+                <td>{{t.amount}}</td>
+                <td>{{t.type}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+
+<a href="dashboard"> 🡨 Back</a>
